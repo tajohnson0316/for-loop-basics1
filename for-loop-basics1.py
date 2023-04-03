@@ -25,4 +25,15 @@ print(sum)
 for i in range(2018, -1, -4):
     print(i)
 
-    """ Set three variables: lowNum, highNum, mult. Starting at lowNum and going through highNum, print only the integers that are a multiple of mult. For example, if lowNum=2, highNum=9, and mult=3, the loop should print 3, 6, 9 (on successive lines) """
+    """ 
+    Set three variables: lowNum, highNum, mult. Starting at lowNum and going through highNum, 
+    print only the integers that are a multiple of mult. For example, if lowNum=2, highNum=9, 
+    and mult=3, the loop should print 3, 6, 9 (on successive lines) 
+    """
+low_num = 2
+high_num = 9
+multiple = 3
+
+for i in range(low_num, high_num + 1):
+    if i % multiple == 0:
+        print(i)
